@@ -7,27 +7,10 @@ import {sendEmail} from '../containers/send-email'
 export const StepState = ({children}) => {
   const initialState = {
     step1: {},
-    step2: {
-      educationalInstitution: '',
-      educationalSpecialization: '',
-      educationalGraduatedYear: '',
-    },
-    step3: {
-      courseEducationalOrganization: '',
-      course: '',
-      courseFinishDate: '',
-    },
-    step4: {
-      workPlace: '',
-      workPositionHeld: '',
-      workStartDate: '',
-      workEndDate: '',
-    },
-    step5: {
-      freeTimeSpendInfo: '',
-      questionsToUs: '',
-      terms: true,
-    },
+    step2: {},
+    step3: {},
+    step4: {},
+    step5: {},
   };
 
   const [state, dispatch] = useReducer(stepReducer, initialState);
