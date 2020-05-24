@@ -112,20 +112,23 @@ export const Step1 = () => {
                    value={firstStepState.number}
 
         />
-        {/* Validation here*/}
+         {/* Validation here*/}
 
-        {/*(firstStepState.number === '' || firstStepState.city === '' || firstStepState.birthday === '' || firstStepState.position === ''*/}
-        {/*|| firstStepState.position === '' || firstStepState.fullName === '')*/}
-        {/* ?<Link to={'/step1'} style={styles.btn2}}
-        {/*  <Text style={styles.btnText}>Next</Text>*/}
-        {/*</Link> */}
-        {/*: <Link to={'/step2'} style={styles.btn} onPress={() => finish()}>*/}
-        {/*  <Text style={styles.btnText}>Next</Text>*/}
-        {/*</Link>  */}
-        {/*}*/}
-        <Link to={'/step2'} style={styles.btn} onPress={() => finish()}>
+        {firstStepState.number === '' || firstStepState.city === '' || firstStepState.birthday === '' || firstStepState.position === ''
+        || firstStepState.position === '' || firstStepState.fullName === ''
+        ? <Link to={'/step1'} style={styles.btn2} >
+          <Text style={styles.btnText}>Next</Text>
+        </Link> :
+           <Link to={'/step2'} style={styles.btn} onPress={() => finish()}>
           <Text style={styles.btnText}>Next</Text>
         </Link>
+        }
+        
+        {/* Validation off*/}
+        
+        {/*<Link to={'/step2'} style={styles.btn} onPress={() => finish()}>*/}
+        {/*  <Text style={styles.btnText}>Next</Text>*/}
+        {/*</Link>*/}
       </View>
     </>
   );
