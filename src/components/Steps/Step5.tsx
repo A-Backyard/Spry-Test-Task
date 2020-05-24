@@ -84,8 +84,6 @@ export const Step5 = () => {
 
           <Text style={styles.inputLabel3}>I consent to the processing of personal data<Text
             style={styles.valid}>*</Text></Text>
-
-          {/*/>*/}
         </View>
         <Link to={'/'} style={styles.btn} onPress={() => finish()}>
           <Text style={styles.btnText}>Send Form</Text>
@@ -190,7 +188,7 @@ const styles = StyleSheet.create({
 
   },
   btn: {
-    top: '2%',
+    top: '0%',
     backgroundColor: '#7A4ED9',
     justifyContent: 'center',
     alignItems: 'center',
@@ -210,6 +208,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginTop: -15,
   },
   circle: {
     paddingRight: 10,
