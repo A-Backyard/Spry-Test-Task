@@ -114,14 +114,14 @@ export const Step1 = () => {
         />
         {/* Validation here*/}
 
-        {/*{if (firstStepState.number = '' || firstStepState.city = '' || firstStepState.birthday = '' || firstStepState.position = ''*/}
-        {/*|| firstStepState.position || firstStepState.fullName = '')*/}
-        {/*{ <Link to={'/step2'} style={styles.btn} onPress={() => finish()}>*/}
+        {/*(firstStepState.number === '' || firstStepState.city === '' || firstStepState.birthday === '' || firstStepState.position === ''*/}
+        {/*|| firstStepState.position === '' || firstStepState.fullName === '')*/}
+        {/* ?<Link to={'/step1'} style={styles.btn2}}
         {/*  <Text style={styles.btnText}>Next</Text>*/}
-        {/*</Link> } else {*/}
-        {/*   <Link to={'/step2'} style={styles.btn2} onPress={() => finish()}>*/}
+        {/*</Link> */}
+        {/*: <Link to={'/step2'} style={styles.btn} onPress={() => finish()}>*/}
         {/*  <Text style={styles.btnText}>Next</Text>*/}
-        {/*</Link> } */}
+        {/*</Link>  */}
         {/*}*/}
         <Link to={'/step2'} style={styles.btn} onPress={() => finish()}>
           <Text style={styles.btnText}>Next</Text>
