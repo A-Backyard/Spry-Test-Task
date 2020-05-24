@@ -56,7 +56,7 @@ export const StepState = ({children}) => {
     sendEmail(
       'anton.backyard@gmail.com',
       'Test task states',
-      {initialState},
+      'Тут будет всё из консоль лога :)',
     ).then(() => {
       console.log('Your message was successfully sent!');
     });
